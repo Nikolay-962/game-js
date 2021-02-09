@@ -21,7 +21,7 @@ img {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Lato', 'Oswald', 'Philosopher',  'Pacifico', cursive;
+  font-family:  'Philosopher', cursive, serif;
   background-color: rgb(12, 194, 240); 
 }
 .container {
@@ -51,10 +51,11 @@ img {
   }
 }
 */
-.m-main {
-  &__wrap {   
+.m-main {    
+  &__wrap {      
     background-color: rgb(12, 194, 240);
-    height: 100vh;    
+    height: 100vh;
+    margin-top: 60px;    
   }
   &__btn {
     position: fixed;
@@ -76,7 +77,6 @@ img {
   }
 }
 .top {
-  margin-top: 60px;
   &__list {
     display: grid;
     grid-template-columns: repeat(7, 1fr);  
@@ -96,7 +96,6 @@ img {
     letter-spacing: 0.2em;
     border: 1px solid rgb(122, 106, 106);
     transition: .5s;
-    font-family: 'Philosopher', serif;
     &:hover {
       background-color: rgb(228, 231, 41);
       color: rgb(44, 9, 245);
@@ -112,8 +111,6 @@ img {
   position: relative;
   height: 100%;
   z-index: 3;
-  display: flex;
-  justify-content: center;
   &__wrap {
     position: absolute;
     left: 0;
@@ -168,10 +165,21 @@ img {
     background-color: transparent;
   }
 }
+.link-bg {
+  position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+  &__wrap {
+    padding-bottom: 50.2%;    
+  }  
+}
 .link {
   display: block;
   position: absolute;
   top: 0;
+  right: 0;
   width: 100%;
   bottom: 22.8%;
 }
@@ -212,7 +220,6 @@ img {
   background-color: rgb(40, 70, 238);
   box-shadow: 8px 8px 18px #000;
   text-align: left;
-  font-family: 'Philosopher', serif;
   @include media-down(md) { 
     font-size: 1.6em;
     line-height: 1.3em; 
